@@ -1,0 +1,22 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 5;
+  padding: 5;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+body {
+  background: linear-gradient(#615dad, #ffc8da);
+}
+
+.kontejner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
