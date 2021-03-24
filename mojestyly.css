@@ -2,8 +2,6 @@
 :before,
 :after {
   box-sizing: border-box;
-  margin: 5;
-  padding: 5;
 }
 
 h1 {
@@ -11,7 +9,9 @@ h1 {
 }
 
 body {
+  display: block;
   background: linear-gradient(#615dad, #ffc8da);
+  padding: 100px 100px;
 }
 
 .kontejner {
@@ -23,31 +23,50 @@ body {
 }
 
 .fotka {
-  width: 725px;
-  height: 445;
+  width: 360px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .odstavec {
-  width: 725px;
-  height: 585;
+  width: 360px;
   background-color: #283e50;
   color: white;
+  padding: 0 10px 0 10px;
 }
 
 .pravidla {
   background-color: #1fcca4;
-  width: 725px;
-  height: 105px;
+  width: 360px;
+  height: 50px;
   color: white;
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .zacithrat {
   background-color: #0197f6;
-  width: 725px;
-  height: 105px;
+  width: 360px;
+  height: 50px;
   color: white;
+  display: flex;
   text-align: center;
+  justify-content: center;
+}
+
+.odkaz-na-pravidla,
+.odkaz-na-zacithrat {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+odkaz-na-pravidla:hover {
+  background-color: #1cbb96;
+}
+
+odkaz-na-zacithrat:hover {
+  background-color: #0090e9;
 }
