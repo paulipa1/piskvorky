@@ -11,9 +11,10 @@ h1 {
 
 body {
   display: block;
-  background: linear-gradient(#615dad, #ffc8da);
+  background: linear-gradient(#615dad, #ffc8da), fixed;
   padding: 100px 100px;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration-color: none;
 }
 
 .kontejner {
@@ -22,19 +23,19 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-decoration-color: none;
 }
 
 .fotka {
   width: 360px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px, 10px, 0px, 0px;
 }
 
 .odstavec {
   width: 360px;
-  color: white;
   padding: 0 10px 0 10px;
   background-color: #283e50;
+  color: white;
 }
 
 .pravidla {
@@ -42,6 +43,7 @@ body {
   width: 360px;
   height: 50px;
   color: white;
+  font-size: inherit;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -53,24 +55,31 @@ body {
   width: 360px;
   height: 50px;
   color: white;
+  font-size: inherit;
   display: flex;
   text-align: center;
   justify-content: center;
   padding-top: 17px;
 }
 
-.odkaz-na-pravidla,
-.odkaz-na-zacithrat {
-  text-decoration: none;
+.buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration-color: none;
 }
 
 .pravidla:hover {
   background-color: #1cbb96;
+  text-decoration-color: none;
 }
 
 .zacithrat:hover {
   background-color: #0090e9;
+  text-decoration-color: none;
+}
+
+a {
+  text-decoration: none;
 }
