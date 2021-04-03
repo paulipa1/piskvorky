@@ -12,13 +12,14 @@ h1 {
 body {
   display: block;
   background: linear-gradient(#615dad, #ffc8da), fixed;
-  padding: 100px 100px;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 100px;
 }
 
 .kontejner {
   display: flex;
   flex-direction: column;
+  flex-basis: content;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -38,30 +39,6 @@ body {
   color: white;
 }
 
-.pravidla {
-  background-color: #1fcca4;
-  width: 360px;
-  height: 50px;
-  color: white;
-  font-size: inherit;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding-top: 17px;
-}
-
-.zacithrat {
-  background-color: #0197f6;
-  width: 360px;
-  height: 50px;
-  color: white;
-  font-size: inherit;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding-top: 17px;
-}
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -71,12 +48,74 @@ body {
   text-decoration: none;
 }
 
-.pravidla:hover {
+.button--green {
+  background-color: #1fcca4;
+  width: 360px;
+  height: 50px;
+  color: white;
+  font-size: inherit;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 17px;
+  margin: 0px;
+}
+
+.button--blue {
+  background-color: #0197f6;
+  width: 360px;
+  height: 50px;
+  color: white;
+  font-size: inherit;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 17px;
+  margin: 0px;
+}
+
+.button---green {
+  background-color: #1fcca4;
+  width: 759px;
+  height: 50px;
+  color: white;
+  font-size: inherit;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 17px;
+  margin: 0px;
+}
+
+.button---blue {
+  background-color: #0197f6;
+  width: 759px;
+  height: 50px;
+  color: white;
+  font-size: inherit;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 17px;
+  margin: 0px;
+}
+
+.button--green:hover {
   background-color: #1cbb96;
   text-decoration-color: none;
 }
 
-.zacithrat:hover {
+.button--blue:hover {
+  background-color: #0090e9;
+  text-decoration-color: none;
+}
+
+.button---green:hover {
+  background-color: #1cbb96;
+  text-decoration-color: none;
+}
+
+.button---blue:hover {
   background-color: #0090e9;
   text-decoration-color: none;
 }
@@ -91,18 +130,11 @@ a {
   border-radius: 10px 10px 0px 0px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
   line-height: 35px;
   width: 700px;
-  min-height: 100%;
   background-color: #283e50;
   color: white;
-}
-
-.nadpis {
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Lobster', cursive;
 }
 
 .kolecka,
@@ -111,3 +143,49 @@ a {
   height: 1em;
   filter: invert(100%);
 }
+
+.obrazky {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 3rem auto;
+  background-color: #283e50;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.instructions {
+  margin: 40px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+}
+
+.single-instruction {
+  width: 100%;
+}
+
+figcaption {
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+}
+
+@media (min-width: 780px) {
+  .blok {
+    width: 760px;
+  }
+  .obrazky {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  figure {
+    max-width: 45%;
+    margin: 0 0 20px 0;
+  }
+} ;
