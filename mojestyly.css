@@ -203,7 +203,7 @@ figcaption {
 
 .nadpis {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .hraje {
@@ -248,4 +248,31 @@ h2 {
 
 button.policko:hover {
   background-color: rgb(248, 223, 248);
+}
+
+.homeimg {
+  background-color: #1fcca4;
+  width: 2rem;
+  border-radius: 2px;
+}
+
+.restartimg {
+  background-color: #0197f6;
+  width: 2rem;
+  border-radius: 2px;
+}
+
+.homeodkaz:hover {
+  background-color: #1cbb96;
+  text-decoration-color: none;
+}
+
+.restartodkaz:hover {
+  background-color: #0090e9;
+  text-decoration-color: none;
+}
+
+.homerestart a {
+  width: 4rem;
+  height: 4rem;
 }
