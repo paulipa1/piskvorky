@@ -193,6 +193,11 @@ figcaption {
   }
 }
 
+.bodyhra {
+  background: linear-gradient(#615dad, #ffc8da), fixed;
+  min-height: 1000px;
+}
+
 .obsah {
   display: flex;
   flex-direction: column;
@@ -207,7 +212,7 @@ figcaption {
 }
 
 .hraje {
-  padding-left: 100px;
+  padding-left: 150px;
 }
 
 h2 {
@@ -224,7 +229,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 100px;
+  padding-right: 150px;
 }
 
 .pole {
@@ -252,27 +257,27 @@ button.policko:hover {
 
 .homeimg {
   background-color: #1fcca4;
-  width: 2rem;
-  border-radius: 2px;
+  width: 30px;
+  border-radius: 5px;
 }
 
 .restartimg {
   background-color: #0197f6;
-  width: 2rem;
-  border-radius: 2px;
+  width: 30px;
+  border-radius: 5px;
 }
 
-.homeodkaz:hover {
+.homeimg:hover {
   background-color: #1cbb96;
   text-decoration-color: none;
 }
 
-.restartodkaz:hover {
+.restartimg:hover {
   background-color: #0090e9;
   text-decoration-color: none;
 }
 
 .homerestart a {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
 }
