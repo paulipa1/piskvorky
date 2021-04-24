@@ -272,3 +272,27 @@ button.policko:hover {
   width: 5rem;
   height: 5rem;
 }
+
+.board__field--circle {
+  background-image: url('circle.svg');
+}
+
+.board__field--cross {
+  background-image: url('cross.svg');
+}
+
+.board__field--circle,
+.board__field--cross {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+@keyframes gradual-growth {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 65%;
+  }
+}
