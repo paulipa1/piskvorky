@@ -28,3 +28,25 @@ for (let i = 0; i < policka.length; i++) {
     policka[i].disabled = true;
   });
 }
+
+let pocetKlikov = 0;
+const klik = () => {
+  pocetKlikov += 1;
+  console.log(`Klik na policko ${pocetKlikov}x.`);
+};
+
+for (let i = 0; i < policka.length; i++) {
+  policka[i].addEventListener('click', klik);
+}
+
+const getSymbol = (polozka) => {
+  // Název třídy přizpůsob tvému kódu.
+  if (polozka.classList.contains('board__field--cross')) {
+    return 'cross';
+  } else if (polozka.classList.contains) 'board__field--circle';
+  {
+    return 'circle';
+  }
+};
+
+console.log(getSymbol(policka[1]));
