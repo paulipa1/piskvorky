@@ -19,6 +19,11 @@ for (let i = 0; i < policka.length; i++) {
       kruzok.src = 'circle.svg';
       naTahu = 'circle';
     }
+    if (isWinningMove(policka[i])) {
+      if (getSymbol(policka[i]) === 'circle') {
+        alert('Víťazí krúžok');
+      } else alert('Víťazí kríž');
+    }
   });
 }
 
@@ -73,3 +78,57 @@ const getPosition = (polozka) => {
 };
 
 console.log(getPosition(policka[70]));
+
+const symbolsToWin = 5;
+const isWinningMove = (polozka) => {
+  const origin = getPosition(polozka);
+  const symbol = getSymbol(polozka);
+
+  let i;
+
+  let inRow = 1; // Jednička pro právě vybrané políčko
+  // Koukni doleva
+  i = origin.column;
+  while (i > 0 && symbol === getSymbol(getField(origin.row, i - 1))) {
+    inRow++;
+    i--;
+  }
+
+  // Koukni doprava
+  i = origin.column;
+  while (
+    i < boardSize - 1 &&
+    symbol === getSymbol(getField(origin.row, i + 1))
+  ) {
+    inRow++;
+    i++;
+  }
+
+  if (inRow >= symbolsToWin) {
+    return true;
+  }
+
+  let inColumn = 1;
+  // Koukni nahoru
+  i = origin.row;
+  while (i > 0 && symbol === getSymbol(getField(i - 1, origin.column))) {
+    inColumn++;
+    i--;
+  }
+
+  // Koukni dolu
+  i = origin.row;
+  while (
+    i < boardSize - 1 &&
+    symbol === getSymbol(getField(i + 1, origin.column))
+  ) {
+    inColumn++;
+    i++;
+  }
+
+  if (inColumn >= symbolsToWin) {
+    return true;
+  }
+
+  return false;
+};
